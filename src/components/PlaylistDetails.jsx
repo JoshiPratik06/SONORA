@@ -41,6 +41,7 @@ export default function PlaylistDetails({
               key={song.id}
               song={song}
               {...rowProps(song, playlist.id)}
+              stackActions
               actions={
                 <>
                   <Button
