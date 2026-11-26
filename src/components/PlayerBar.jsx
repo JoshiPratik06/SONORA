@@ -3,10 +3,11 @@ import { formatDuration } from '../lib/format'
 
 export default function PlayerBar({ song, isPlaying, elapsed, onToggle, onNext, onPrevious }) {
   const progress = song ? (elapsed / song.duration) * 100 : 0
+
   return (
     <footer
       aria-label="Now playing"
-      className="fixed inset-x-0 bottom-0 z-10 border-t border-slate-800 bg-slate-900 pb-[env(safe-area-inset-bottom)]"
+      className="fixed inset-x-0 bottom-0 z-10 border-t border-white/10 bg-gradient-to-r from-[#120e1c] via-[#15111e] to-[#0d0b12] pb-[env(safe-area-inset-bottom)]"
     >
       <div className="h-1 bg-slate-800">
         <div className="h-full bg-violet-500" style={{ width: `${progress}%` }} />
@@ -19,17 +20,34 @@ export default function PlayerBar({ song, isPlaying, elapsed, onToggle, onNext, 
           </p>
         </div>
         {song && (
-          <span className="hidden text-sm text-slate-400 tabular-nums sm:block">
+          <span className="hidden shrink-0 text-sm tabular-nums text-slate-400 sm:block">
             {formatDuration(elapsed)} / {formatDuration(song.duration)}
           </span>
         )}
-        <Button variant="ghost" icon disabled={!song} onClick={onPrevious} aria-label="Previous">
+        <Button
+          variant="ghost"
+          icon
+          disabled={!song}
+          onClick={onPrevious}
+          aria-label="Previous"
+        >
           ⏮︎
         </Button>
-        <Button icon disabled={!song} onClick={onToggle} aria-label={isPlaying ? 'Pause' : 'Play'}>
+        <Button
+          icon
+          disabled={!song}
+          onClick={onToggle}
+          aria-label={isPlaying ? 'Pause' : 'Play'}
+        >
           {isPlaying ? '❚❚' : '▶'}
         </Button>
-        <Button variant="ghost" icon disabled={!song} onClick={onNext} aria-label="Next">
+        <Button
+          variant="ghost"
+          icon
+          disabled={!song}
+          onClick={onNext}
+          aria-label="Next"
+        >
           ⏭︎
         </Button>
       </div>

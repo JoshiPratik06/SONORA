@@ -1,9 +1,68 @@
 @import 'tailwindcss';
 
 body {
-  @apply bg-slate-950 text-slate-100 antialiased;
+  @apply text-slate-100 antialiased;
+  min-height: 100vh;
+  background-color: #0a0810;
+  background-image:
+    radial-gradient(ellipse at 12% 0%, rgb(91 33 182 / 0.1), transparent 34rem),
+    radial-gradient(ellipse at 100% 35%, rgb(192 38 211 / 0.055), transparent 30rem);
 }
 
 dialog::backdrop {
   background: rgb(2 6 23 / 0.75);
+}
+
+.player-seek {
+  appearance: none;
+  height: 4px;
+  margin: 0;
+  background: transparent;
+}
+
+.player-seek::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    #f43f5e 0,
+    #f43f5e var(--seek-progress),
+    #475569 var(--seek-progress),
+    #475569 100%
+  );
+}
+
+.player-seek::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  border: 0;
+  border-radius: 9999px;
+  background: #fff;
+}
+
+.player-seek::-moz-range-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: #475569;
+}
+
+.player-seek::-moz-range-progress {
+  height: 4px;
+  border-radius: 9999px;
+  background: #f43f5e;
+}
+
+.player-seek::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 9999px;
+  background: #fff;
+}
+
+.player-seek:focus-visible {
+  outline: 2px solid #a78bfa;
+  outline-offset: 4px;
 }
