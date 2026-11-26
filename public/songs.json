@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "title": "Midnight Local",
+    "artist": "The Paper Kites Club",
+    "genre": "Indie",
+    "duration": 214
+  },
+  {
+    "id": 2,
+    "title": "Neon Monsoon",
+    "artist": "Asha Verma",
+    "genre": "Pop",
+    "duration": 187
+  },
+  {
+    "id": 3,
+    "title": "Copper Skies",
+    "artist": "Northbound Static",
+    "genre": "Rock",
+    "duration": 252
+  },
+  {
+    "id": 4,
+    "title": "Slow Chai",
+    "artist": "Raga Lounge",
+    "genre": "Lo-fi",
+    "duration": 163
+  },
+  {
+    "id": 5,
+    "title": "Orbit",
+    "artist": "Kiran Sol",
+    "genre": "Electronic",
+    "duration": 301
+  },
+  {
+    "id": 6,
+    "title": "Window Seat",
+    "artist": "Mellow Transit",
+    "genre": "Lo-fi",
+    "duration": 145
+  },
+  {
+    "id": 7,
+    "title": "Paper Lanterns",
+    "artist": "Asha Verma",
+    "genre": "Pop",
+    "duration": 229
+  },
+  {
+    "id": 8,
+    "title": "Iron Harbour",
+    "artist": "Northbound Static",
+    "genre": "Rock",
+    "duration": 276
+  },
+  {
+    "id": 9,
+    "title": "Blue Hour Quartet",
+    "artist": "Dev Menon Trio",
+    "genre": "Jazz",
+    "duration": 338
+  },
+  {
+    "id": 10,
+    "title": "Satellite Hearts",
+    "artist": "Kiran Sol",
+    "genre": "Electronic",
+    "duration": 198
+  },
+  {
+    "id": 11,
+    "title": "Dusty Road Home",
+    "artist": "June Alder",
+    "genre": "Indie",
+    "duration": 241
+  },
+  {
+    "id": 12,
+    "title": "Raindrop Raga",
+    "artist": "Meera Iyer",
+    "genre": "Classical",
+    "duration": 412
+  },
+  {
+    "id": 13,
+    "title": "Late Checkout",
+    "artist": "Dev Menon Trio",
+    "genre": "Jazz",
+    "duration": 265
+  },
+  {
+    "id": 14,
+    "title": "Sugar Rush Avenue",
+    "artist": "Nova Lane",
+    "genre": "Pop",
+    "duration": 176
+  }
+]
