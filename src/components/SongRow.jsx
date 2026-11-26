@@ -22,7 +22,7 @@ export default function SongRow({ song, isCurrent, isPlaying, onPlay, actions, s
       </Button>
       <div className="min-w-0 flex-1">
         <p className={`truncate font-medium ${isCurrent ? 'text-violet-300' : ''}`}>{song.title}</p>
-        <p className="truncate text-sm text-slate-400">
+        <p className="text-sm break-words text-slate-400">
           {song.artist} · {song.genre}
         </p>
       </div>
