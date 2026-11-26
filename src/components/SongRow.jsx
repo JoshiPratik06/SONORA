@@ -33,8 +33,8 @@ export default function SongRow({ song, isCurrent, isPlaying, onPlay, actions, s
         <p className={`truncate text-sm font-medium ${isCurrent ? 'text-violet-200' : ''}`}>
           {song.title}
         </p>
-        <p className="truncate text-xs text-slate-500">
-          {song.artist} <span className="text-slate-600">· {song.genre}</span>
+        <p className="break-words text-xs text-slate-400">
+          {song.artist} <span>· {song.genre}</span>
         </p>
       </div>
       <span className="shrink-0 text-xs tabular-nums text-slate-400">
