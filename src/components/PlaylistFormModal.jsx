@@ -24,7 +24,7 @@ export default function PlaylistFormModal({ playlists, playlist, onSubmit, onClo
           value={name}
           onChange={(e) => setName(e.target.value)}
           error={submitted ? error : ''}
-          autoFocus
+          data-autofocus
         />
         <div className="mt-4 flex justify-end gap-2">
           <Button variant="secondary" onClick={onClose}>

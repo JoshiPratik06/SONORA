@@ -10,6 +10,8 @@ export default function Modal({ title, onClose, children }) {
   useEffect(() => {
     const dialog = ref.current
     if (!dialog.open) dialog.showModal()
+    // showModal focuses the first button, so move focus to the marked field.
+    dialog.querySelector('[data-autofocus]')?.focus()
     return () => dialog.close()
   }, [])
 
