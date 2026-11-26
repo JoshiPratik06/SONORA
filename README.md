@@ -2,7 +2,7 @@
 
 A small React app to browse songs, build playlists and "play" them (no real audio).
 
-**Live demo:** _add your Vercel/Netlify URL here_
+**Live demo:** _https://sonora-eta-five.vercel.app/_
 
 ## Run it
 
@@ -63,4 +63,4 @@ src/
 
 ## AI usage
 
-This project was built with the help of an AI assistant (Claude).
+This project was built with the help of AI assistants (Claude and GitHub Copilot).
