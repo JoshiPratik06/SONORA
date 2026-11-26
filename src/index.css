@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+dialog::backdrop {
+  background: rgb(2 6 23 / 0.75);
+}
